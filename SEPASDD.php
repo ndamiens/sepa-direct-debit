@@ -357,6 +357,7 @@ class SEPASDD {
      */
     public function save(){
         $this->finalize();
+	$this->xml->formatOutput = true;
         $result = $this->xml->saveXML();
         return $result;
     }//save
